@@ -69,7 +69,17 @@
             margin-top: 0;
             color: var(--accent-color);
         }
+a.text-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
 
+        a.text-link:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
         ol.steps {
             background-color: var(--secondary-bg);
             padding: 1.5rem 1.5rem 1.5rem 3rem;
@@ -127,10 +137,10 @@
 <body>
 
     <header>
-        <h1>Play Offline Together</h1>
+        <h1>Offline Play Package</h1>
         <p>A simple Minecraft Fabric mod that makes playing LAN worlds without internet access easy and simple.</p>
                 <p>Fabric | 1.21.11 | More versions coming soon!</p>
-                        <p>Server Required, Client Optional But Helpful! <a href="#Client" class="button">See here!</a></p>
+<p>Server Required, Client Optional But Helpful! <a href="#Client" class="text-link">See here!</a></p>
         <a href="https://modrinth.com/project/offlineplaypackage" class="button">Download Mod</a>
     </header>
 
