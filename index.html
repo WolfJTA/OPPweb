@@ -46,7 +46,77 @@
         .top-banner a.banner-link:hover {
             opacity: 0.7;
         }
+/* --- Roadmap Styles --- */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 1.5rem;
+            margin-left: 1rem;
+        }
 
+        .timeline-item {
+            position: relative;
+        }
+
+        /* The dots on the timeline */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.95rem; /* Aligns the dot over the border */
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-color: var(--bg-color);
+            border: 3px solid var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .timeline-content {
+            background-color: var(--secondary-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        /* Status Badges */
+        .status {
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status.completed { 
+            background-color: rgba(76, 175, 80, 0.15); 
+            color: #4CAF50; 
+            border: 1px solid #4CAF50;
+        }
+        .status.in-progress { 
+            background-color: rgba(255, 193, 7, 0.15); 
+            color: #FFC107; 
+            border: 1px solid #FFC107;
+        }
+        .status.planned { 
+            background-color: rgba(33, 150, 243, 0.15); 
+            color: #2196F3; 
+            border: 1px solid #2196F3;
+        }
         h1 {
             margin: 0;
             font-size: 2.5rem;
@@ -227,6 +297,38 @@ a.text-link {
 <p>PLEASE Submit any problems you get with the mod, Submit any ideas, Or rate the mod <a href="https://forms.gle/QnRMCFXrDKZqJutH7" class="text-link">here!</a></p></p>
                 <p>Thank you so much for your time :)</p>
             </ol>
+        </section>
+<section id="roadmap">
+            <h2>Development Roadmap</h2>
+            <p>Here's a quick look at what's been done and what's coming next for the Offline Play Package!</p>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>v1.0.0 - The Foundation</h3>
+                        <p>Core offline LAN capabilities, custom skins, and basic IP sharing helper in the chat.</p>
+                        <span class="status completed">Completed</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>v1.1.0 - The Wardrobe Update</h3>
+                        <p>Adding custom capes and a full wardrobe GUI to easily swap between your favorite offline drip.</p>
+                        <span class="status in-progress">In Progress</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>v2.0.0 - Client & Server Synergy</h3>
+                        <p>Advanced features requiring the mod on both ends, seamless cross-device connection handling, and more preloaded skins.</p>
+                        <span class="status planned">Planned</span>
+                    </div>
+                </div>
+
+            </div>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
